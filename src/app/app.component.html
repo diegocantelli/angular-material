@@ -1,0 +1,103 @@
+<app-material-navbar></app-material-navbar>
+<router-outlet></router-outlet>
+
+<!-- Botões -->
+<!-- <button mat-button>mat button</button>
+<button mat-raised-button>mat raised button</button>
+<button mat-flat-button>mat flat button</button>
+<button mat-stroked-button>mat stroked button</button>
+
+<div>
+  <button mat-icon-button>Icon</button>
+  <button mat-fab>Fab</button>
+  <button mat-mini-fab>MiniFab</button>
+</div>
+
+<div>
+  <button color="primary" mat-button>Primary</button>
+  <button color="accent" mat-button>Accent</button>
+  <button color="warn" mat-button>Warn</button>
+</div> -->
+
+<!-- Botão toggle -->
+
+<!-- <div>
+  <mat-button-toggle #toggle>Toggle</mat-button-toggle>
+  {{toggle.checked}}
+</div> -->
+
+<!-- Mat button toggle group -->
+<!-- <div>
+  <mat-button-toggle-group formControlName="formControl" #toggleGroup="matButtonToggleGroup">
+    <mat-button-toggle value="angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="react">React</mat-button-toggle>
+    <mat-button-toggle value="vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+  {{this.formControl.value}}
+</div> -->
+
+<!-- Mat badge -->
+<!-- <div>
+  <span matBadge="5" matBadgeSize="small" matBadgeOverlap="false">Notificações</span>
+</div>
+
+<div>
+  <span matBadge="5" matBadgeSize="small" matBadgeOverlap="false" matBadgeHidden="true">Notificações</span>
+</div> -->
+
+<!-- Mat progress spinneer -->
+<!-- <div>
+  <mat-progress-spinner value="40" color="accent"></mat-progress-spinner>
+  <mat-spinner></mat-spinner>
+</div> -->
+
+<!-- Mat Toolbar -->
+<!-- <mat-toolbar color="primary" class="navbar">
+  <div>Diego</div>
+  <div>
+    <a>Grids</a>
+    <a>About</a>
+    <a>Services</a>
+  </div>
+</mat-toolbar> -->
+
+
+<!-- mat-sizenav -->
+<!-- <mat-sidenav-container>
+  <mat-sidenav #sidenav [(opened)]="opened">Sidenav</mat-sidenav>
+  <mat-sidenav-content>Main
+    <button (click)="opened=!opened">Toggle Opened</button>
+    <button (click)="sidenav.open()">Open</button>
+    <button (click)="sidenav.close()">Close</button>
+  </mat-sidenav-content>
+</mat-sidenav-container> -->
+
+
+<!-- mat-menu -->
+<!-- <mat-menu #appMenu="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="subMenu">FrontEnd</button>
+  <button mat-menu-item>BackEnd</button>
+</mat-menu>
+
+<button mat-flat-button [matMenuTriggerFor]="appMenu">Menu</button>
+
+<mat-menu #subMenu="matMenu" xPosition="after" yPosition="below">
+  <button mat-menu-item>Angular</button>
+  <button mat-menu-item>React</button>
+  <button mat-menu-item>Vue</button>
+</mat-menu>
+
+<mat-menu #lazyMenu="matMenu">
+  <ng-template matMenuContent let-name="name" let-hobby="hobby">
+    <button mat-menu-item>Settings</button>
+    <button mat-menu-item>Hobby {{hobby}}</button>
+    <button mat-menu-item>Log out {{name}}</button>
+  </ng-template>
+</mat-menu>
+
+<button mat-raised-button [matMenuTriggerData]="{  name: 'Diego', hobby:'Futebol' }"
+  [matMenuTriggerFor]="lazyMenu">Teste1
+</button>
+
+<button [matMenuTriggerData]="{ name: 'Teste2', hobby: 'Música'}" mat-raised-button
+  [matMenuTriggerFor]="lazyMenu">Teste2</button> -->

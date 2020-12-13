@@ -1,0 +1,15 @@
+<mat-horizontal-stepper linear>
+  <mat-step label="Endereço de entrega" completed=true>
+    <p>Detalhes do endereço de entrega</p>
+  </mat-step>
+  <mat-step label="Endereço de cobrança" completed=false optional>
+    <p>Detalhes do endereço de cobrança</p>
+    <div>
+      <button mat-button matStepperPrevious>Voltar</button>
+      <button mat-button matStepperNext>Próximo</button>
+    </div>
+  </mat-step>
+  <mat-step label="Finalizar pedido" completed=false>
+    <p>Detalhes do pedido</p>
+  </mat-step>
+</mat-horizontal-stepper>

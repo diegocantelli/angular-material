@@ -1,0 +1,95 @@
+<mat-form-field floatLabel="never" appearance="legacy">
+  <mat-label>Nome</mat-label>
+  <input matInput required>
+  <mat-hint align="end">Min 5 caracteres</mat-hint>
+</mat-form-field>
+
+
+<mat-form-field floatLabel="never" appearance="standard">
+  <mat-label>Nome</mat-label>
+  <input matInput required>
+  <mat-hint align="end">Min 5 caracteres</mat-hint>
+</mat-form-field>
+
+<mat-form-field floatLabel="never" appearance="fill" color="accent">
+  <mat-label>Nome</mat-label>
+  <input matInput required>
+  <mat-hint align="end">Min 5 caracteres</mat-hint>
+</mat-form-field>
+
+
+<mat-form-field floatLabel="never" appearance="outline" color="warn">
+  <mat-label>Nome</mat-label>
+  <input matInput required>
+  <mat-hint align="end">Min 5 caracteres</mat-hint>
+</mat-form-field>
+
+
+<mat-form-field>
+  <mat-label>Topic</mat-label>
+  <mat-select [(value)]="selectedValue">
+    <mat-option>None</mat-option>
+    <mat-option value="angular">Angular</mat-option>
+    <mat-option value="React">React</mat-option>
+    <mat-option value="vue">Vue</mat-option>
+  </mat-select>
+</mat-form-field>
+{{selectedValue}}
+
+
+<mat-form-field>
+  <mat-label>Tópico</mat-label>
+  <mat-select [(value)]="selectedValue" multiple>
+    <mat-option>None</mat-option>
+    <mat-optgroup label="Web">
+      <mat-option value="angular">Angular</mat-option>
+      <mat-option value="react">React</mat-option>
+      <mat-option value="vue">Vue</mat-option>
+    </mat-optgroup>
+    <mat-optgroup label="Mobile">
+      <mat-option value="ionic">Ionic</mat-option>
+      <mat-option value="react">React Native</mat-option>
+    </mat-optgroup>
+  </mat-select>
+
+</mat-form-field>
+
+
+<form>
+  <mat-form-field>
+    <input type="text" matInput [matAutocomplete]="auto" [formControl]="myControl" />
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of filteredOptions | async" [value]>
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
+
+<div>
+  <mat-checkbox color="primary">
+    Subscribe
+  </mat-checkbox>
+</div>
+
+<div>
+  <mat-checkbox labelPosition="before">
+    Subscribe
+  </mat-checkbox>
+</div>
+
+<div>
+  <mat-radio-group>
+    <mat-radio-button value="angular" color="primary">Angular</mat-radio-button>
+    <mat-radio-button value="react">React</mat-radio-button>
+    <mat-radio-button value="vue" color="warn">Vue</mat-radio-button>
+  </mat-radio-group>
+</div>
+
+<div>
+  <mat-form-field>
+    <input matInput [matDatepicker]="myDatePicker" [min]="minDate" [max]="maxDate" [matDatepickerFilter]="dateFilter">
+    <mat-datepicker-toggle [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
+    <mat-datepicker #myDatePicker></mat-datepicker>
+  </mat-form-field>
+</div>
